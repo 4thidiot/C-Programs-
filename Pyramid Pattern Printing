@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main()
+{
+int c=5, d=7;
+printf("     *     \n");
+for (int i=2; i<=6; i++)
+{
+    for (int j=1; j<=11; j++)
+    {
+        if(c<=j && j<=d)
+        {printf("*");}
+        else
+        {printf(" ");}
+    }
+    c=c-1;
+    d=d+1;
+    printf("\n");
+}
+
+
+
+
+return 0;
+}
+
+
