@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+	
+	pfactor(180);
+
+}
+
+void pfactor(int n)
+{
+    int i=2;
+    if(n==1)
+        return;
+    else
+    {
+        while(n%i!=0)
+            i++;
+    }
+    printf("%d \n", i);
+    pfactor(n/i);
+}
