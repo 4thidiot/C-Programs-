@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+	
+	int *a;
+	float *b;
+	char *c;
+	
+	printf("%u \n", sizeof(a));
+	printf("%u \n", sizeof(b));
+	printf("%u", sizeof(c));
+
+}
+
