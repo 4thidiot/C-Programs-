@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+// WAP to pass and return an array out of a function.
+
+int* meow(int *, int ) ;
+
+int main() {
+	
+	int *C;
+	int A[]={1, 2, 3, 4, 5};
+	C = meow(&A[0], 5);
+	
+	printf("%u", C);
+	
+	for(int i=0; i<5; i++)
+	{
+	    printf("\n%d", C[i]);
+	}
+
+}
+
+int* meow(int *a, int n)    //since c is a pointer variable therefore usme pointer hi return hoga
+{
+    int *B;
+    
+    B=a;
+    	
+    printf("%u\n", B);
+    return B;
+}
