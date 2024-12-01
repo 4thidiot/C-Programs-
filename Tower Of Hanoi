@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+	
+	int n;
+	char A='A', B='B', C='C';
+	scanf("%d", &n);
+	tofh(n, A, B, C);
+
+    
+}
+
+void tofh(int n, char A, char B, char C)
+{
+        if(n>0)
+        {
+        tofh(n-1, A, C, B);
+        printf("Move a disc from %c to %c \n", A, C);
+        tofh(n-1, B, A, C);
+        }
+}
