@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+struct student 
+{
+    char name[20];
+    int roll;
+    float marks;
+}s1,s2,*p1,*p2, *t;     //yahi pe temporary pointer variable will be defined                         since structure type ka hi ho to hona chahiye
+
+void swap(struct student *a, struct student *b);
+
+int main() {
+	scanf("%s %d %f", s1.name, &s1.roll, &s1.marks);
+	scanf("%s %d %f", s2.name, &s2.roll, &s2.marks);
+	
+	p1=&s1;
+	p2=&s2;
+
+    swap(p1, p2);
+    
+    printf("%s %d %f\n", p1->name, p1->roll, p1->marks);
+	printf("%s %d %f", p2->name, p2->roll, p2->marks);
+
+    return 0;
+}
+
+
+void swap(struct student *a, struct student *b)
+{
+    t=a;
+    a=b;
+    b=t;
+}
