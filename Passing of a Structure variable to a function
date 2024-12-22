@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+struct student 
+{
+    char name[20];
+    int roll;
+    float marks;
+}s;
+
+
+void printer(struct student a)
+{
+    printf("%s %d %f", a.name, a.roll, a.marks);
+}
+
+
+int main() {
+	scanf("%s %d %f", s.name, &s.roll, &s.marks);
+	printer(s);
+
+    return 0;
+}
+
