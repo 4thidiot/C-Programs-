@@ -1,0 +1,61 @@
+#include <stdio.h>
+
+struct student 
+{
+    char name[20];
+    int roll;
+    float marks;
+};
+
+
+int main() {
+    struct student s;
+	scanf("%s %d %f", s.name, &s.roll, &s.marks);
+	printf("%s, %d, %f", s.name, s.roll, s.marks);
+
+    return 0;
+}
+
+--------------------------------- or ---------------------------------------
+
+
+#include <stdio.h>
+
+struct student 
+{
+    char name[20];
+    int roll;
+    float marks;
+}s;
+
+
+int main() {
+	scanf("%s %d %f", s.name, &s.roll, &s.marks);
+	printf("%s, %d, %f", s.name, s.roll, s.marks);
+
+    return 0;
+}
+
+
+
+------------------------- Using a Pointer Variable ---------------------------------
+
+#include <stdio.h>
+
+struct student 
+{
+    char name[20];
+    int roll;
+    float marks;
+}s, *p;
+
+
+int main() {
+    p=&s;
+	scanf("%s %d %f", s.name, &s.roll, &s.marks);
+	printf("%s, %d, %f", (*p).name, (*p).roll, p->marks);
+
+    return 0;
+}
+
+
