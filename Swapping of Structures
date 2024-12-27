@@ -1,5 +1,75 @@
 #include <stdio.h>
 
+struct billis
+{
+    char name[15];
+    
+}b1,b2, t;
+	
+	
+	
+int main() {
+    
+    strcpy(b1.name,"Meow");
+    strcpy(b2.name,"Purrr");
+    
+    swap(&b1, &b2);
+    printf("b1 ka name = %s     b2 ka name =%s", b1.name, b2.name);
+    
+}
+
+void swap(struct billis *p, struct billis *q)
+{
+    t=*p;
+    *p=*q;
+    *q=t;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   Puraana code neeche not v optimised
+
+
+
+
+
+#include <stdio.h>
+
 struct student 
 {
     char name[20];
