@@ -10,7 +10,7 @@ struct billis
 	
 int main() {
     
-    strcpy(b1.name,"Meow");
+    strcpy(b1.name,"Meow");                 //since array cant = array
     strcpy(b2.name,"Purrr");
     
     swap(&b1, &b2);
